@@ -286,13 +286,16 @@ function closeOptionModal() {
 }
 */
 
+var start = true;
+
 const questions = [{
         id: 0,
         q: "How many people playing in soccer?",
-        a: [{ text: "5", isCorrect: false },
-            { text: "8", isCorrect: false },
-            { text: "11", isCorrect: true },
-            { text: "9", isCorrect: false }
+        answer: [
+                { text: "19", isCorrect: false },
+                { text: "14", isCorrect: false },
+                { text: "11", isCorrect: true },
+                { text: "12", isCorrect: false }
         ]
     }
 ]
@@ -300,26 +303,34 @@ const questions = [{
 var start = true;
 
 function iterate(id) {
-    var result = document.getElementsByClassName("result");
-    result[0].innerText = "";
 
     const question = document.getElementById("question");
+
+    question.innerText = questions[id].q;
 
     const btn1 = document.getElementById('btn1');
     const btn2 = document.getElementById('btn2');
     const btn3 = document.getElementById('btn3');
     const btn4 = document.getElementById('btn4');
-  
-  
-    // Providing option text 
-    btn1.innerText = Questions[id].a[1].text;
-    btn2.innerText = Questions[id].a[2].text;
-    btn3.innerText = Questions[id].a[3].text;
-    btn4.innerText = Questions[id].a[4].text;
-  
-    // Providing the true or false value to the options
-    op1.value = Questions[id].a[0].isCorrect;
-    op2.value = Questions[id].a[1].isCorrect;
-    op3.value = Questions[id].a[2].isCorrect;
-    op4.value = Questions[id].a[3].isCorrect;
-    
+
+    btn1.innerText = questions[id].answer[0].text;
+    btn2.innerText = questions[id].answer[1].text;
+    btn3.innerText = questions[id].answer[2].text;
+    btn4.innerText = questions[id].answer[3].text;
+
+    op1.value = questions[id].answer[0].isCorrect;
+    op2.value = questions[id].answer[1].isCorrect;
+    op3.value = questions[id].answer[2].isCorrect;
+    op4.value = questions[id].answer[3].isCorrect;
+
+}
+
+if (start) {
+    iterate("0");
+}
+
+/*addEventListerer ("click" (btn)) {
+    if (questions[id].answer.isCorrect === true) {
+        body.createElement(div).innerHTML = "<div>True</div>";
+    }
+}*/
