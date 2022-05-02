@@ -8,27 +8,21 @@
     <title>Flash quiz</title>
 </head>
 <body>
-    <div>
-        <button id="startquiz">Start Quiz</button>
-    <div id="start-box">
-        <ol class="gamerules">Game Rules: 
-            <li><i class='fa fa-star' style='font-size:18px'></i>
-                To start the quiz, click on the Start button below</li>
-            <li><i class='fa fa-star' style='font-size:18px'></i>
-                Read the question and select your answer</li>
-            <li><i class='fa fa-star' style='font-size:18px'></i>
-                You will be automatically redirected to the next question</li>
-            <li><i class='fa fa-star' style='font-size:18px'></i>
-                You can see your progress under the questions!</li>
-            <li><i class='fa fa-star' style='font-size:18px'></i>
-                You can see how many questions you got correctly under the questions!</li>
-        </ol>
-    </div>
-
-    <button id="startquiz">Start</button> 
-    <div class="quiz-wrapper">       
+    <div class="quiz-wrapper"> 
+        <!-- <div>
+            <button id="startquiz">Start Quiz</button>
+        <div id="start-box">
+            <ol class="question rules">Game Rules: 
+                <li>To start the quiz, click on the Start button below</li>
+                <li>Read the question and select your answer</li>
+                <li>You will be automatically redirected to the next question</li>
+                <li>You can see your progress under the questions!</li>
+                <li>You can see how many questions you got correctly under the questions!</li>
+            </ol>
+        </div> -->
+    
         <div id="questionBox" class="question hide">Sample Question</div>
-        <div class="options">
+        <div class="options hide">
             <ul id="ul">
                 <li id="opt1" onclick="button(this)"></li>
                 <li id="opt2" onclick="button(this)"></li>

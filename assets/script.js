@@ -6,6 +6,11 @@ var opt1 = document.getElementById('opt1')
 var opt2 = document.getElementById('opt2')
 var opt3 = document.getElementById('opt3')
 var opt4 = document.getElementById('opt4')
+/*var startBtn = document.getElementById("startquiz")
+var startBox = document.querySelector("#start-box")
+var qOptions = document.getElementById('options')
+var qQuestions = document.getElementById('questions')
+var qScore = document.getElementById('score')*/
 
 /* Questions */
 var app={
@@ -21,9 +26,21 @@ var app={
                 answer:2
             }            
         ],
-        
+
         index:0,
-        load:function(){
+
+        /*startBtn,addEventListener("click", startQuiz)*/
+
+        /*function startQuiz(){
+            // console.log("Started!")
+            startBtn.classList.add("hide");
+            startBox.classList.add("hide");
+            qOptions.classList.remove("hide");
+            qQuestion.classList.remove("hide");
+            qScore.classList.remove("hide");
+            this.load();*/
+            
+            load: function (){
             if(this.index<=this.questions.length-1){
                 quizbox.innerHTML=this.index+1 + ". " +this.questions[this.index].q;
                 opt1.innerHTML=this.questions[this.index].options[0];
