@@ -4,14 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet">
+    <link href="assets/styles.css" rel="stylesheet">
     <title>Flash quiz</title>
 </head>
-<body> 
+<body>
+    <div>
+        <button id="startquiz">Start Quiz</button>
+    <div id="start-box">
+        <ol class="gamerules">Game Rules: 
+            <li><i class='fa fa-star' style='font-size:18px'></i>
+                To start the quiz, click on the Start button below</li>
+            <li><i class='fa fa-star' style='font-size:18px'></i>
+                Read the question and select your answer</li>
+            <li><i class='fa fa-star' style='font-size:18px'></i>
+                You will be automatically redirected to the next question</li>
+            <li><i class='fa fa-star' style='font-size:18px'></i>
+                You can see your progress under the questions!</li>
+            <li><i class='fa fa-star' style='font-size:18px'></i>
+                You can see how many questions you got correctly under the questions!</li>
+        </ol>
+    </div>
+
+    <button id="startquiz">Start</button> 
     <div class="quiz-wrapper">       
-        <div id="questionBox" class="question">
-            Sample Question
-        </div>
+        <div id="questionBox" class="question hide">Sample Question</div>
         <div class="options">
             <ul id="ul">
                 <li id="opt1" onclick="button(this)"></li>
@@ -20,17 +36,14 @@
                 <li id="opt4" onclick="button(this)"></li>
             </ul>
         </div>
-        <div class="score">
+        <div class="score hide">
             <div class="next">
-                <button id="btnNext" type="button" onclick="next()">
-                  Next
-                </button>
+                <button id="btnNext" type="button" onclick="next()">Next</button>
             </div>
-            <div class="score-card">
-                SCORE: <span id="scoreCard">0</span>
+            <div class="score-card">SCORE:<span id="scoreCard">0</span>
             </div>
         </div>
     </div>
-    <script src="script.js"></script> 
+    <script src="assets/script.js"></script> 
 </body>
 </html>

@@ -1,3 +1,4 @@
+/* Global variables */
 var ul = document.getElementById('ul')
 var nextButton = document.getElementById('btnNext');
 var quizbox = document.getElementById('questionBox')
@@ -6,6 +7,7 @@ var opt2 = document.getElementById('opt2')
 var opt3 = document.getElementById('opt3')
 var opt4 = document.getElementById('opt4')
 
+/* Questions */
 var app={
         questions:[
             {
@@ -19,6 +21,7 @@ var app={
                 answer:2
             }            
         ],
+        
         index:0,
         load:function(){
             if(this.index<=this.questions.length-1){

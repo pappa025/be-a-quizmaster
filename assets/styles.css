@@ -102,3 +102,7 @@ body{
     color:white;
     border-radius: 8px;
 }
+
+.hide {
+    display: none;
+}
