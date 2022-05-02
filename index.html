@@ -8,37 +8,29 @@
     <title>Flash quiz</title>
 </head>
 <body> 
-    <h1 id="title">Flashquiz</h1>
-    <div class="container">
-        <div id="question-container" class="hide">
-            <div id="question">Question</div>
-                <div id="answer-buttons" class="btn-grid">
-                    <button class="btn" id="btn1">Answer 1</button>
-                    <button class="btn" id="btn2">Answer 2</button>
-                    <button class="btn" id="btn3">Answer 3</button>
-                    <button class="btn" id="btn4">Answer 4</button>            
-                </div> 
-                <div>
-                    <button type="btn" class="next-bt">Next</button>
-                </div> 
+    <div class="quiz-wrapper">       
+        <div id="questionBox" class="question">
+            Sample Question
+        </div>
+        <div class="options">
+            <ul id="ul">
+                <li id="opt1" onclick="button(this)"></li>
+                <li id="opt2" onclick="button(this)"></li>
+                <li id="opt3" onclick="button(this)"></li>
+                <li id="opt4" onclick="button(this)"></li>
+            </ul>
+        </div>
+        <div class="score">
+            <div class="next">
+                <button id="btnNext" type="button" onclick="next()">
+                  Next
+                </button>
+            </div>
+            <div class="score-card">
+                SCORE: <span id="scoreCard">0</span>
+            </div>
         </div>
     </div>
-
-    <div id="scoreboard">
-        <img src="/logo.png" alt="">
-        <h2 id="score-title">Your Score</h2>
-        <h2 id="score"></h2>
-        <button type="button" id="score-btn" onclick="backToQuiz()">Back to Quiz</button>
-        <button type="button" id="check-answer" onclick="checkAnswer()">Check Answers</button>
-    </div>
-
-    <div id="answerbank">
-        <h2>Answers :</h2>
-        <ol type="1" id="answers">
-
-        </ol>
-        <button type="button" id="score-btn" onclick="backToQuiz()">Back to Quiz</button>
-    </div>
-    <script src="script.js"></script>
+    <script src="script.js"></script> 
 </body>
 </html>
