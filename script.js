@@ -25,3 +25,12 @@ var questionBank= [
         answer : '1967'
     }
 ]
+
+var question= document.getElementById('question');
+var quizContainer= document.getElementById('quiz-container');
+var scorecard= document.getElementById('scorecard');
+var option0= document.getElementById('btn1');
+var option1= document.getElementById('btn2');
+var option2= document.getElementById('btn3');
+var option3= document.getElementById('btn4');
+var next= document.querySelector('.next');
