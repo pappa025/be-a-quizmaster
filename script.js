@@ -1,89 +1,79 @@
-var questionBank= [
-    {
-        question : 'Eritrea, which became the 182nd member of the UN in 1993, is in the continent of',
-        option : ['Asia','Africa','Europe','Australia'],
-        answer : 'Africa'
-    },
-    {
-        question : 'Garampani sanctuary is located at',
-        option : ['Junagarh, Gujarat','Diphu, Assam','Kohima, Nagaland','Gangtok, Sikkim'],
-        answer : 'Diphu, Assam'
-    },
-    {
-        question : 'For which of the following disciplines is Nobel Prize awarded?',
-        option : ['Physics and Chemistry','Physiology or Medicine','Literature, Peace and Economics','All of the above'],
-        answer : 'All of the above'
-    },
-    {
-        question : 'Hitler party which came into power in 1933 is known as',
-        option : ['Labour Party','Nazi Party','Ku-Klux-Klan','Democratic Party'],
-        answer : 'Nazi Party'
-    },
-    {
-        question : 'First human heart transplant operation conducted by Dr. Christiaan Barnard on Louis Washkansky, was conducted in',
-        option : ['1967','1968','1958','1922'],
-        answer : '1967'
-    }
-]
+var ul = document.getElementById('ul')
+var nextButton = document.getElementById('btnNext');
+var quizbox = document.getElementById('questionBox')
+var opt1 = document.getElementById('opt1')
+var opt2 = document.getElementById('opt2')
+var opt3 = document.getElementById('opt3')
+var opt4 = document.getElementById('opt4')
 
-var question = document.getElementById('question');
-var quizContainer = document.getElementById('question-container');
-var scorecard = document.getElementById('scorecard');
-var option0 = document.getElementById('option1');
-var option1 = document.getElementById('option2');
-var option2 = document.getElementById('option3');
-var option3 = document.getElementById('option4');
-var next= document.querySelector('.next');
-var points= document.getElementById('score');
-var span= document.querySelectorAll('span');
-var i=0;
-var score= 0;
-
-function displayQuestion(){
-    for(var a=0;a<span.length;a++){
-        span[a].style.background='none';
-    }
-    question.innerHTML= 'Q.'+(i+1)+' '+questionBank[i].question;
-    option0.innerHTML= questionBank[i].option[0];
-    option1.innerHTML= questionBank[i].option[1];
-    option2.innerHTML= questionBank[i].option[2];
-    option3.innerHTML= questionBank[i].option[3];
-    stat.innerHTML= "Question"+' '+(i+1)+' '+'of'+' '+questionBank.length;
+var app={
+        questions:[
+            {
+                q:'What is the name of the river',
+                options: ['Danube', 'Niger', 'Congo', 'Limpopo'],
+                answer:1
+            },
+            {
+                q:'What is the name of the Deadly virus',
+                options: ['Antrax', 'Killvi', 'Corona', 'Wuhanvi'],
+                answer:2
+            }            
+        ],
+        index:0,
+        load:function(){
+            if(this.index<=this.questions.length-1){
+                quizbox.innerHTML=this.index+1 + ". " +this.questions[this.index].q;
+                opt1.innerHTML=this.questions[this.index].options[0];
+                opt2.innerHTML=this.questions[this.index].options[1];
+                opt3.innerHTML=this.questions[this.index].options[2];
+                opt4.innerHTML=this.questions[this.index].options[3];
+            }
+            else {
+                quizbox.innerHTML="Quiz Completed!";
+                ul.style.display="none";
+                nextButton.style.display="none";
+            }
+        },
+        next: function(){
+            this.index++;
+            this.load();
+        },
+        check: function(ele){
+            var id=ele.id.split('');
+            if(id[id.length-1]==this.questions[this.index].answer){
+                this.score++;
+                ele.className="correct";
+                this.scoreCard();
+            }
+            else{
+                ele.className="wrong";
+            }
+        },
+        preventClick:function(){
+            for(let i=0; i<ul.children.length; i++){
+                ul.children[i].style.pointerEvents="none";
+            }
+        },
+        allowClick:function(){
+            for(let i=0; i<ul.children.length; i++){
+                ul.children[i].style.pointerEvents="auto";
+                ul.children[i].className=''
+            }
+        },
+        score:0,
+        scoreCard:function(){
+            scoreCard.innerHTML=this.questions.length + "/" + this.score;
+        }
 }
 
-function nextQuestion(){
-    if(i<questionBank.length-1)
-    {
-        i=i+1;
-        displayQuestion();
-    }
-    else{
-        points.innerHTML= score+ '/'+ questionBank.length;
-        quizContainer.style.display= 'none';
-        scoreboard.style.display= 'block'
-    }
-}
-//click events to next button
-next.addEventListener('click',nextQuestion);
+window.load=app.load();
 
-//Back to Quiz button event
-function backToQuiz(){
-    location.reload();
+function button(ele){
+    app.check(ele);
+    app.preventClick();
 }
 
-//function to check Answers
-function checkAnswer(){
-    var answerBank= document.getElementById('answerBank');
-    var answers= document.getElementById('answers');
-    answerBank.style.display= 'block';
-    scoreboard.style.display= 'none';
-    for(var a=0;a<questionBank.length;a++)
-    {
-        var list= document.createElement('li');
-        list.innerHTML= questionBank[a].answer;
-        answers.appendChild(list);
-    }
+function next(){
+    app.next();
+    app.allowClick();
 }
-
-
-displayQuestion();
