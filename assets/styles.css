@@ -1,5 +1,6 @@
 body{
     background-color: black;
+    background: url('../assets/images/cessna_instrument.jpg') no-repeat center center;
     margin:0;
     padding:0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -11,15 +12,15 @@ body{
 .quiz-wrapper{
     height: 400px;
     width: 600px;
-    background-color: white;
+    background-color:bisque;
     margin: 30px auto;
-    border-radius: 8px;
+    border-radius: 12px;
     padding:25px
 }
 
 .quiz-wrapper .question{
     min-height: 50px;
-    background-color: teal;
+    background-color:darkslategray ;
     border-radius: 8px;
     color: white;
     padding: 15px;

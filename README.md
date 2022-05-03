@@ -1,108 +1,75 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+Milestone Project 2
 
-Welcome Adam Papp,
+This project is the first time when im spreading my wings on the Software Developement world. The aim of this Project is to Design an interactive Front-End web application using HTML and CSS based on the principles of user experience design, accessibility and responsivity.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+I've choosen the topic of aviation for this project, as I'm flying Single Engine aircraft in a friendly Club at Weston (EIWT) Airport. This project summarizes the most important steps how to obtain your PPL (Private Pilot License). I've also made a detailed page of the 3 most common and widely used training aircrafts (C-152, C-172, Piper Warrior). If you've ever been in any General Aviation airport, for sure you've seen few of them! I've collected on the Resources page the most widely used links for daily flight-planning. These links could be very useful in the future as they can be the base of the Club's webpage I'm planning to do.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+UX
+The webpage divided to three pages, accessible thrugh the Navbar on the top of the page.
 
-## Gitpod Reminders
+Main Screen - main page with pictures about steps how to get your Private License
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+main Screenpsge screenshot
+Three most common training aircrafts in columns with picture of them
 
-`python3 -m http.server`
+3 training aircaft page screenshot
+Very useful links for flight planning, weather
 
-A blue button should appear to click: _Make Public_,
+resources page screenshot
+The design is aviation themed. In the set header i've placed cloudy sky background, behind the page contents I've placed a picture of the instrument panel of a General Aviation aircraft. In the project I've used darkblue background with orange text color to have great contrast and readability.
 
-Another blue button should appear to click: _Open Browser_.
+Features
+The following is a summary of the features already in place and those that could perhaps be implemented in the future.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+Existing Features
+The project consist of the three htmls and the corresponding CSS file. The images has been placed in the assets/images directory. Link to the pages are placed in the Header section of the page. Parts of the pages were positioned using CSS Grid. It was substantial chellenge to learn the concept, but towards the end of the project I've mastered the layout system. Both Header and Footer is set, they don't change while we navigating between the pages.
 
-A blue button should appear to click: _Make Public_,
+How to do your PPL page - consist of explanation of 4 main step to get your PPL. Beside the texts there are topic related pictures. corners of each element of the page has curvature, which give nice design to them. As mentioned above darblue background gives great contrast with the orange text for easier readibility. background of the main area is the analogue instrument paner of a Gen Av Aircraft. Header of the page has got a cloud background. Aircrafts - 3 coulmns with a slightly transparent picture showing the 3 most common Gen Aviaation trainers with their performance data and characteristics. Resources - 9 tiles with pictures to the most widely used external links for General Aviation Pilots.
 
-Another blue button should appear to click: _Open Browser_.
+Features to Implement
+This page have enourmous improvement opportunity, as my knowledge getting deeper and deeper in software developement, I'm aiming to be the base of the Club's webpage.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+Testing
+Page has been tested with code validator and check all links are valid as of 03/2022.
 
-To log into the Heroku toolbelt CLI:
+For the HTMLs I've tested the code with [Nu HTML checker] (https://validator.w3.org/nu/) with no error result. The CSS code has been run through the [W3C CSS Validator] (https://jigsaw.w3.org/css-validator/#validate_by_input) with no error found.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+Technologies Used
+HTML5
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+Used to construct the basic site structure.
+CSS3
 
-------
+Provides styling for the page and all content.
+Font Awesome 5
 
-## Release History
+Icon elements used for Social Media icons.
+Deployment
+Deployment and source control was entirely done via GitHub. The repository can be found here:
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+Repo: https://github.com/pappa025/How-to-do-your-ppl
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+The site has been deployed using GitHub Pages and is available to review here:
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+Github Pages: https://pappa025.github.io/How-to-do-your-ppl/
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+Local deployment is not required for this project.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+Content
+Pictures has been sourced from Pixabay, picjumbo and freeimages site.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+Aircraft data were sourced from Wikipedia's and AOPA's website.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+[Cessna-152 Wikipedia] (https://en.wikipedia.org/wiki/Cessna_152)
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+[Cessna-152 AOPA] (https://www.aopa.org/go-fly/aircraft-and-ownership/aircraft-fact-sheets/cessna-152)
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+[Cessna-172 Wikipedia] (https://en.wikipedia.org/wiki/Cessna_172)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+[Cessna-172 AOPA] (https://www.aopa.org/go-fly/aircraft-and-ownership/aircraft-guide/aircraft/cessna-172)
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+[Piper PA 28 Wikipedia] (https://en.wikipedia.org/wiki/Piper_PA-28_Cherokee)
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+[Piper PA 28 AOPA] (https://www.aopa.org/go-fly/aircraft-and-ownership/aircraft-fact-sheets/piper-warrior)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+For the resources page the idea and came from [Leinster Aero Club] (https://www.leinsteraeroclub.com/) webpage.
