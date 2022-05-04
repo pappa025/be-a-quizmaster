@@ -12,11 +12,11 @@ I've choosen  the topic of aviation for this project, as I'm flying Single Engin
 
 Upon loading, the first quistion presented with multiple choices. 
 
-<img src="https://github.com/pappa025/simple-aviation-quiz/raw/main/assets/images/start_page.png" alt="screenhot of the firstpage of the test with airplane instrument bacground" style="max-width: 100%;">
+<img src="https://github.com/pappa025/simple-aviation-quiz/raw/main/assets/images/start_page.png" alt="screenshot of the firstpage of the test with airplane instrument bacground" style="max-width: 100%;">
 
 Three most common training aircrafts in columns with picture of them
 
-<img src="https://github.com/pappa025/simple-aviation-quiz/raw/main/assets/images/final_page.png" alt="screenhot of the score we achived in the test with airplane instrument bacground" style="max-width: 100%;">
+<img src="https://github.com/pappa025/simple-aviation-quiz/raw/main/assets/images/final_page.png" alt="screenshot of the score we achived in the test with airplane instrument background" style="max-width: 100%;">
 
 The design is aviation and the questions are aviation themed. The aim of the quiz is to achive most good answers. Behind the quiz I've placed a picture of the instrument panel of a General Aviation aircraft.
 
@@ -31,10 +31,10 @@ The program goes through of the same questions in the same order and displays on
 ### Features to Implement
 
 Many functions can be built in. As I was checking countless videos and pages about quizes, some of the ideas for the future:
-*start page
-*on final page showing which answer bad or good
-*source questions from external file
-*randomize them
+-start page
+-on final page showing which answer bad or good
+-source questions from external file
+-randomize them
 
 ## Testing
 
@@ -71,3 +71,13 @@ Github Pages: https://pappa025.github.io/simple-aviation-quiz/
 Background picture was sourced from pixjumbo.
 
 Aviation question were sourced from the internet.
+
+## Ideas
+
+Many content has been checked, some of them well beyond my level and understanding of JS. Just some of them where I took snippets of ideas:
+
+https://www.youtube.com/watch?v=riDzcEQbX6k&t=1292s
+
+https://www.youtube.com/watch?v=bGQ9sIHZdlo&t=3680s
+
+https://www.youtube.com/watch?v=79WRPIknVHs&t=3700s
