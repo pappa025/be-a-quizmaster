@@ -80,4 +80,10 @@ https://www.youtube.com/watch?v=riDzcEQbX6k&t=1292s
 
 https://www.youtube.com/watch?v=bGQ9sIHZdlo&t=3680s
 
+https://www.sitepoint.com/simple-javascript-quiz/
+
+https://simplestepscode.com/javascript-quiz-tutorial/
+
+https://www.sitepoint.com/simple-javascript-quiz/
+
 https://www.youtube.com/watch?v=79WRPIknVHs&t=3700s
