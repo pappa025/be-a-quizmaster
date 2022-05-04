@@ -1,12 +1,12 @@
 /* Global variables */
 
-var ul = document.getElementById('ul')
+var ul = document.getElementById('ul');
 var nextButton = document.getElementById('btnNext');
-var quizbox = document.getElementById('questionBox')
-var opt1 = document.getElementById('opt1')
-var opt2 = document.getElementById('opt2')
-var opt3 = document.getElementById('opt3')
-var opt4 = document.getElementById('opt4')
+var quizbox = document.getElementById('questionBox');
+var opt1 = document.getElementById('opt1');
+var opt2 = document.getElementById('opt2');
+var opt3 = document.getElementById('opt3');
+var opt4 = document.getElementById('opt4');
 
 /* Questions & the main js script*/
 
@@ -19,7 +19,7 @@ var app={
             },
 
             {
-                q:'In an emergency when the aeroplane experiences a sudden loss in cabin pressure, for how many minutes can an oxygen mask provide us with oxygen?',
+                q:'When the aeroplane experiences loss in cabin pressure, for how many minutes can an oxygen mask provide us with oxygen?',
                 options: ['5 minutes', '10 minutes', '15 minutesona', '20 minutes'],
                 answer:2
             },
@@ -38,11 +38,11 @@ var app={
                 options: ['Motor blades', 'Rotor blades', 'Spinning blades', 'Hoovering blades'],
                 answer:2
             },{
-                q:'In 1927, Charles Lindbergh became the first person to cross which watermass on a solo, non-stop flight with his aeroplane “the Spirit of St. Louis”?',
+                q:'In 1927, Charles Lindbergh became the first person to cross which watermass on a solo flight?',
                 options: ['The Atlantic Ocean', 'The Pacific Ocean', 'The Indian Ocean', 'Mediterrian Sea'],
                 answer:1
             },{
-                q:'Despite its name, what is the actual colour of the black box in an aeroplane, which is also known as the Flight Data Recorder?',
+                q:'Despite its name, what is the actual colour of the black box?',
                 options: ['Green', 'Orange', 'Blue', 'Yellow'],
                 answer:2
             },{
@@ -119,14 +119,15 @@ var app={
         allowClick:function(){
             for(let i=0; i<ul.children.length; i++){
                 ul.children[i].style.pointerEvents="auto";
-                ul.children[i].className=''
+                ul.children[i].className='';
             }
         },
         score:0,
         scoreCard:function(){
             scoreCard.innerHTML=this.questions.length + "/" + this.score;
         }
-}
+};
+
 
 window.load=app.load();
 

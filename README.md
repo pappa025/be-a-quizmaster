@@ -12,11 +12,11 @@ I've choosen  the topic of aviation for this project, as I'm flying Single Engin
 
 Upon loading, the first quistion presented with multiple choices. 
 
-<img src="https://github.com/pappa025/simple-aviation-quiz/blob/main/assets/images/start_page.png" alt="screenhot of the firstpage of the test with airplane instrument bacground" style="max-width: 100%;">
+<img src="https://github.com/pappa025/simple-aviation-quiz/raw/main/assets/images/start_page.png" alt="screenhot of the firstpage of the test with airplane instrument bacground" style="max-width: 100%;">
 
 Three most common training aircrafts in columns with picture of them
 
-<img src="https://github.com/pappa025/simple-aviation-quiz/blob/main/assets/images/final_page.png" alt="screenhot of the score we achived in the test with airplane instrument bacground" style="max-width: 100%;">
+<img src="https://github.com/pappa025/simple-aviation-quiz/raw/main/assets/images/final_page.png" alt="screenhot of the score we achived in the test with airplane instrument bacground" style="max-width: 100%;">
 
 The design is aviation and the questions are aviation themed. The aim of the quiz is to achive most good answers. Behind the quiz I've placed a picture of the instrument panel of a General Aviation aircraft.
 
@@ -42,6 +42,8 @@ Page has been tested with code validator and check all links are valid as of 04/
 
 For the HTMLs I've tested the code with [Nu HTML checker] (https://validator.w3.org/nu/) with no error result.
 The CSS code has been run through the [W3C CSS Validator] (https://jigsaw.w3.org/css-validator/#validate_by_input) with no error found.
+JavaScript run through of JSHint where all formal errors were addressed.
+Lighthouse results were all between 95-100.
 
 ### Technologies Used
 
